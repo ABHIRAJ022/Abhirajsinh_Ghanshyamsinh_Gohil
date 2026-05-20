@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Abhirajsinh Gohil Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Abhirajsinh Gohil</h1>
+  <p>Full Stack Developer | Python Developer</p>
+</header>
+
+<section class="about">
+  <img src="images/profile.jpg" alt="Profile">
+  <div>
+    <h2>About Me</h2>
+    <p>
+      Motivated B.Tech IT student with skills in HTML, CSS, JavaScript, Python,
+      MongoDB and Full Stack Development.
+    </p>
+
+    <a href="resume.pdf" download class="btn">Download Resume</a>
+  </div>
+</section>
+
+<section>
+  <h2>Skills</h2>
+  <ul class="skills">
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+    <li>Python</li>
+    <li>MongoDB</li>
+    <li>React</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Projects</h2>
+  <div class="cards">
+
+    <div class="card" onclick="openProject('https://github.com/ABHIRAJ022/allinone')">
+      AllAtOne E-Commerce
+    </div>
+
+    <div class="card" onclick="openProject('https://smart-health-monitoring-sigma.vercel.app/')">
+      Smart Health Monitoring
+    </div>
+
+    <div class="card" onclick="openProject('https://smart-soil-feature-prediction-using.vercel.app/')">
+      SoilSense
+    </div>
+
+    <div class="card" onclick="openProject('https://your-builder.vercel.app/')">
+      Your Builder
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Certificates</h2>
+  <div class="cards">
+
+    <div class="card" onclick="openImage('images/cert1.jpg')">
+      Google Cloud Certification
+    </div>
+
+    <div class="card" onclick="openImage('images/cert2.jpg')">
+      JavaScript Certificate
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>Education</h2>
+  <div class="cards">
+
+    <div class="card" onclick="showResult('B.Tech: 9.08 CPI')">
+      B.Tech IT - Silver Oak College
+    </div>
+
+    <div class="card" onclick="showResult('HSC: 89.20 PR')">
+      HSC Science
+    </div>
+
+    <div class="card" onclick="showResult('SSC: 94.52 PR')">
+      SSC
+    </div>
+
+  </div>
+</section>
+
+<!-- Modal -->
+<div id="modal" class="modal" onclick="closeModal()">
+  <img id="modal-img">
+  <p id="modal-text"></p>
+</div>
+
+<footer>
+  <p>© 2026 Abhirajsinh Gohil</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
