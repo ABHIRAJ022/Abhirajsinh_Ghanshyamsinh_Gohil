@@ -2,95 +2,132 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Abhirajsinh Gohil Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
-  <h1>Abhirajsinh Gohil</h1>
-  <p>Full Stack Developer | Python Developer</p>
+  <div class="header-container">
+    <img src="images/profile.jpg" alt="Profile" class="profile-img">
+    <div>
+      <h1>Abhirajsinh Ghanshyamsinh Gohil</h1>
+      <p>Full Stack Developer | Python Developer</p>
+      <p class="contact">
+        📞 9601270941 | 📧 <a href="mailto:abhirajsinhggohil@gmail.com">abhirajsinhggohil@gmail.com</a> <br>
+        🌐 <a href="https://abhiraj022.github.io/PF/" target="_blank">Portfolio</a> |
+        <a href="https://github.com/ABHIRAJ022" target="_blank">GitHub</a> |
+        <a href="https://www.linkedin.com/in/abhirajsinh-ghanshyamsinh-gohil-b34925332" target="_blank">LinkedIn</a>
+      </p>
+      <a href="resume.pdf" download class="btn">Download Resume</a>
+    </div>
+  </div>
 </header>
 
 <section class="about">
-  <img src="images/profile.jpg" alt="Profile">
-  <div>
-    <h2>About Me</h2>
-    <p>
-      Motivated B.Tech IT student with skills in HTML, CSS, JavaScript, Python,
-      MongoDB and Full Stack Development.
-    </p>
+  <h2>Summary</h2>
+  <p>
+    Motivated B.Tech student with strong skills in HTML, CSS, JavaScript, Java, Python, and MongoDB. 
+    Seeking a Python Developer role to apply my knowledge in developing responsive and scalable solutions while learning from real-world challenges.
+  </p>
+</section>
 
-    <a href="resume.pdf" download class="btn">Download Resume</a>
+<section class="experience">
+  <h2>Experience</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>Campus Ambassador Intern at WaySpire</h3>
+      <ul>
+        <li>Created visually appealing posters to enhance visibility.</li>
+        <li>Assisted students in completing forms accurately and efficiently.</li>
+        <li>Guided students in securing internships at WaySpire through targeted support.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>AI Agent Intern at CSRBOX</h3>
+      <ul>
+        <li>Learning AI concepts and creating chatbots.</li>
+        <li>Project-based learning: building practical applications to improve problem-solving and deployment skills.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>IBM SkillsBuild Boot Camp at CSRBOX</h3>
+      <ul>
+        <li>Learned full-stack web development including payment gateway integration and authentication.</li>
+        <li>Contributed to “SwiftlySewa Netbanking” project with responsive digital banking features.</li>
+      </ul>
+    </div>
   </div>
 </section>
 
-<section>
+<section class="education">
+  <h2>Education</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>B.Tech IT - Silver Oak College</h3>
+      <p>Score: 9.00 CPI | JEE Main Qualified: 88.07 PR</p>
+    </div>
+    <div class="card">
+      <h3>HSC - Mother Zainab Junior Science College</h3>
+      <p>89.20 PR Overall | Science Theory: 93.10 PR</p>
+    </div>
+    <div class="card">
+      <h3>SSC - Gopaldas Shivlal Patel Secondary School</h3>
+      <p>94.52 PR</p>
+    </div>
+  </div>
+</section>
+
+<section class="skills">
   <h2>Skills</h2>
-  <ul class="skills">
+  <ul class="skills-list">
     <li>HTML</li>
     <li>CSS</li>
     <li>JavaScript</li>
     <li>Python</li>
+    <li>Java</li>
     <li>MongoDB</li>
     <li>React</li>
+    <li>OOP</li>
+    <li>IoT</li>
   </ul>
 </section>
 
-<section>
+<section class="projects">
   <h2>Projects</h2>
   <div class="cards">
-
     <div class="card" onclick="openProject('https://github.com/ABHIRAJ022/allinone')">
       AllAtOne E-Commerce
     </div>
-
-    <div class="card" onclick="openProject('https://smart-health-monitoring-sigma.vercel.app/')">
-      Smart Health Monitoring
+    <div class="card" onclick="openProject('https://kumarbharat99.github.io/healthvision_ai/')">
+      AI Chat Bot
     </div>
-
+    <div class="card" onclick="openProject('https://smart-health-monitoring-sigma.vercel.app/')">
+      Smart Health Monitoring System
+    </div>
     <div class="card" onclick="openProject('https://smart-soil-feature-prediction-using.vercel.app/')">
       SoilSense
     </div>
-
     <div class="card" onclick="openProject('https://your-builder.vercel.app/')">
       Your Builder
     </div>
-
   </div>
 </section>
 
-<section>
-  <h2>Certificates</h2>
+<section class="certificates">
+  <h2>Certifications</h2>
   <div class="cards">
-
-    <div class="card" onclick="openImage('images/cert1.jpg')">
-      Google Cloud Certification
-    </div>
-
-    <div class="card" onclick="openImage('images/cert2.jpg')">
-      JavaScript Certificate
-    </div>
-
-  </div>
-</section>
-
-<section>
-  <h2>Education</h2>
-  <div class="cards">
-
-    <div class="card" onclick="showResult('B.Tech: 9.08 CPI')">
-      B.Tech IT - Silver Oak College
-    </div>
-
-    <div class="card" onclick="showResult('HSC: 89.20 PR')">
-      HSC Science
-    </div>
-
-    <div class="card" onclick="showResult('SSC: 94.52 PR')">
-      SSC
-    </div>
-
+    <div class="card">Google Cloud Career Launchpad - Cybersecurity</div>
+    <div class="card">JavaScript Training - Spoken Tutorial</div>
+    <div class="card">Command Line in Linux - Coursera</div>
+    <div class="card">DBMS - Coursera</div>
+    <div class="card">HTML & CSS - Spoken Tutorial</div>
+    <div class="card">OOP in Java - DataCamp</div>
+    <div class="card">AI Agent Architect - IBM Skill Build</div>
+    <div class="card">Web Development - IBM Skill Build</div>
   </div>
 </section>
 
